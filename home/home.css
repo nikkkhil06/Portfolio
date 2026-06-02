@@ -12,24 +12,29 @@
 .navbar{
     height: 45px;
     width: 500px;
-    background-color: #110232;
+    /*background-color: #110232;*/
+    background: rgba(17, 2, 50, 0.8);
     border: 2px solid black;
     border-radius: 30px;
-    position: absolute;
+    position: relative;
     top: 2%;
     left: 35%;
     font-size: smaller;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
 }
-.ns1{
-    height: 45px;
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
 }
-.ns1:hover{
-    border-bottom:5px solid whitesmoke;
-}
-.ns2:hover{
-    border-bottom:5px solid whitesmoke;
-    gap: 10px;
+.mainslider{
+    height: 3.5px;
+    background-color: blue;
+    position: absolute;
+    bottom:5px;
+    border-radius: 15px;
 }

@@ -5,13 +5,27 @@
 </head>
 <body>
     <section class="home">
-        <div class="navbar">        
-                <section class="ns1"><a> Home</a></section>
-                <section class="ns2"><a>About</a></section>
-                <section class="ns3"><a>Projects</a></section>
-                <section class="ns4"><a>Skills</a></section>
-                <section class="ns5"><a>Contact ME</a></section>
-           
+        <div class="navbar">  
+            <a class="nav-item" id="button1" onclick=""> Home</a>
+            <a class="nav-item" id="button2" onclick="click2('c2')">About</a>
+            <a class="nav-item" href="#">Projects</a>
+            <a class="nav-item" href="#">Skills</a>
+            <a class="nav-item" href="#">Contact ME</a>
+            <div class="mainslider"></div>
         </div>
+        <script>
+        const items = document.querySelectorAll(".nav-item");
+        const slider = document.querySelector(".mainslider");
+        const firstItem = items[0];
+        slider.style.left = firstItem.offsetLeft + "px";
+        slider.style.width = firstItem.offsetWidth + "px";
+        items.forEach(item=>{
+                item.addEventListener("click",()=>{
+                    slider.style.left = item.offsetLeft + "px";
+                slider.style.width = item.offsetWidth + "px";
+
+            });
+        });  
+        </script>
     </section>
 </body>
