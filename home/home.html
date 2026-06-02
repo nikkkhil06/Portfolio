@@ -21,11 +21,11 @@
         slider.style.left = firstItem.offsetLeft + "px";
         slider.style.width = firstItem.offsetWidth + "px";
         items.forEach(item=>{
-            items.addEventListener("click",()=>{
+            item.addEventListener("click",()=>{
                 items.forEach(i=>{
                     i.classList.remove("active"); 
             });
-                items.classList.add("active");
+                item.classList.add("active");
                 slider.style.left = item.offsetLeft + "px";
                 slider.style.width = item.offsetWidth + "px";
                 });   
