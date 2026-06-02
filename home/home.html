@@ -17,14 +17,18 @@
         const items = document.querySelectorAll(".nav-item");
         const slider = document.querySelector(".mainslider");
         const firstItem = items[0];
+        firstItem.classList.add("active");
         slider.style.left = firstItem.offsetLeft + "px";
         slider.style.width = firstItem.offsetWidth + "px";
         items.forEach(item=>{
-                item.addEventListener("click",()=>{
-                    slider.style.left = item.offsetLeft + "px";
-                slider.style.width = item.offsetWidth + "px";
-
+            items.addEventListener("click",()=>{
+                items.forEach(i=>{
+                    i.classList.remove("active"); 
             });
+                items.classList.add("active");
+                slider.style.left = item.offsetLeft + "px";
+                slider.style.width = item.offsetWidth + "px";
+                });   
         });  
         </script>
     </section>
