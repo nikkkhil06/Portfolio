@@ -196,7 +196,7 @@ h4{
     width: 1100px;
     /*border: 1px solid white;*/
     position: absolute;
-    bottom: 4%;
+    bottom: 2%;
     left: 15%;
     display: flex;
     justify-content: space-between;
@@ -206,29 +206,46 @@ h4{
     background: linear-gradient(to right,#00d4ff,#7b68ee);
     -webkit-background-clip: text;
     color:transparent;
+    font-size: x-large;
 }
 .details-h1{
     color: white;
     font-weight: 1100;
-    font-size: x-large;
+    font-size: xxx-large;
+}
+.details-line{
+    height: 3px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 5px;
+    position: absolute;
+    top: 33%;
 }
 .details-p1{
     color: white;
-    font-size: large;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 .details-p2{
     color: white;
-    font-size: large;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 .details-p3{
     background: linear-gradient(to right,#00d4ff,#7b68ee);
     -webkit-background-clip: text;
     color:transparent;
-    font-size: large;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 .details-p4{
     color: white;
-    font-size: large;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .educa-info{
