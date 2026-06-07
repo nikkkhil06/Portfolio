@@ -6,11 +6,11 @@
 <body>
     <section class="home">
         <div class="navbar">  
-            <a class="nav-item" id="button1" onclick=""> Home</a>
-            <a class="nav-item" id="button2" onclick="">About</a>
-            <a class="nav-item" href="#">Projects</a>
-            <a class="nav-item" href="#">Skills</a>
-            <a class="nav-item" href="#">Contact ME</a>
+            <a class="nav-item" id="button1" onclick="SmoothScroll('1')"> Home</a>
+            <a class="nav-item" id="button2" onclick="SmoothScroll('2')">About</a>
+            <a class="nav-item" id="button3" onclick="SmoothScroll('3')">Projects</a>
+            <a class="nav-item" id="button4" onclick="SmoothScroll('4')">Skills</a>
+            <a class="nav-item" id="button5" onclick="SmoothScroll('5')">Contact ME</a>
             <div class="mainslider"></div>
         </div>
         <div class="info-sec">
@@ -29,6 +29,13 @@
         <div class="photo-sec">
         </div>
         <script>
+            function SmoothScroll(sectionID){
+                if(sectionID='about-me'){
+                document.getElementById('about-me').scrollIntoView({behavior:'smooth'});
+            }
+        }
+        </script>
+        <script>
         const items = document.querySelectorAll(".nav-item");
         const slider = document.querySelector(".mainslider");
         const firstItem = items[0];
@@ -46,5 +53,27 @@
                 });   
         });  
         </script>
+    </section>
+    <section class="about-me" id="about-me">
+        <div class="photo-sec2"></div>
+        <div class="details">
+            <h4  class="details-h4">Get To Know Me</h4>
+            <h1 class="details-h1">ABOUT ME</h1><br>
+            <p class="details-p1">I'm Nikhil Vishwakarma, a BSc Computer Science Student </p>
+            <p class="details-p2">and a Passinate </p><p class="details-p3">Frontend DEVELOPER</p><br>
+            <p class="details-p4">I love creating responsive and modern web applications <br> and love LEARNING new tools and technologies which<br> improve my skills.</p>
+        </div>
+        <div class="info">
+            <div class="educa-info">
+                <!--<img class="info-pic1" src="education-icon.png">-->
+            </div>
+            <div class="current-info">
+                <!--<img class="info-pic2" src="book-icon.jpg">-->
+            </div>
+            <div class="goal-info">
+                <!--<img class="info-pic3" src="goal-icon.jpg">-->
+            </div>
+        </div>
+
     </section>
 </body>
