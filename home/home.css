@@ -183,6 +183,7 @@ h4{
     left: 18%;
     border-radius: 10px;
     border: 1px solid whitesmoke;
+    filter: brightness(85%);
 }
 .details{
      height: 300px;
@@ -191,19 +192,8 @@ h4{
     top: 16%;
     right: 16%;
 }
-.info{
-    height: 300px;
-    width: 1100px;
-    /*border: 1px solid white;*/
-    position: absolute;
-    bottom: 2%;
-    left: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 .details-h4{
-    background: linear-gradient(to right,#00d4ff,#7b68ee);
+    background: linear-gradient(to right,#391384,#381b7d,#391c77,#391384);
     -webkit-background-clip: text;
     color:transparent;
     font-size: x-large;
@@ -248,18 +238,171 @@ h4{
     font-weight: 400;
 }
 
+.info{
+    height: 300px;
+    width: 1100px;
+    position: absolute;
+    bottom: 2%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:40px;
+}
 .educa-info{
     height: 200px;
     width: 280px;
-    border: 1px solid white;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    border: 0.2px solid black;
+    position:relative;
+}
+.educa-info:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.15);
+}
+.info-pic1{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+}
+.info-h1{
+    color: white;
+    position: absolute;
+    top: 7%;
+    left: 33%;
+    font-weight: 100;
+    font-size: xx-large;
+}
+.info-line1{
+    height: 3px;
+    width: 40px;
+    background-color: blue;
+    position: absolute;
+    left: 28%;
+    top: 28%;
+}
+.info-h3{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    line-height: 1.6rem;
+    font-size: larger;
+    background: linear-gradient(to right, #00d4ff, #7b68ee);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.info-h32{
+    position: absolute;
+    top: 46%;
+    left: 5%;
+    font-weight: 100;
+    color: white;
+    line-height: 1.6rem;
 }
 .current-info{
     height: 200px;
-    width: 280px;
-    border: 1px solid white;
+    width: 350px;
+    position:relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    border: 0.2px solid black;
+}
+.current-info:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.15);
+}
+.info-pic2{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    position: absolute;
+    top: 7%;
+    left: 4.5%;
+}
+.info-h12{
+    color: white;
+    position: absolute;
+    top: 7%;
+    left: 28%;
+    font-weight: 100;
+    font-size: xx-large;
+}
+.info-line12{
+    height: 3px;
+    width: 40px;
+    background-color: blue;
+    position: absolute;
+    left: 28%;
+    top: 30%;
+}
+.info-list1{
+    color: white;
+    position: absolute;
+    top: 37%;
+    left: 33%;
+    font-weight: 100;
+    line-height: 1.6rem;
 }
 .goal-info{
     height: 200px;
     width: 280px;
-    border: 1px solid white;
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    border: 0.2px solid black;
+}
+.goal-info:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.15);
+}
+
+.info-pic3{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    position: absolute;
+    top: 7%;
+    left: 4.5%;
+}
+.info-h13{
+    color: white;
+    position: absolute;
+    top: 7%;
+    left: 33%;
+    font-weight: 100;
+    font-size: xx-large;
+}
+.info-line13{
+    height: 3px;
+    width: 40px;
+    background-color: blue;
+    position: absolute;
+    left: 33%;
+    top: 31%;
+}
+.info-h33{
+    position: absolute;
+    top: 41%;
+    left: 5%;
+    font-weight: 100;
+    color: white;
+    line-height: 1.6rem;
+}
+.info-span33{
+    background: linear-gradient(to right, #00d4ff, #7b68ee);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
