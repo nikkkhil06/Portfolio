@@ -1,0 +1,260 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #2b0380,#2d097b,#391384,#381b7d,#391c77,#391384,#2d097b,#2b0380);
+
+}
+header{
+    position: absolute;
+}
+.project-header{
+    height: 120px;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-h1{
+    position: absolute;
+    right: 52%;
+    top: 24%;
+    font-size: xxx-large;
+    color: white;
+}
+.project-span1{
+    position: absolute;
+    background: linear-gradient(to right, #00d4ff, #7b68ee);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.project-h4{
+    position: absolute;
+    top: 5rem;
+    font-weight: 100;
+    color: #c8c1f2;
+    line-height: 1.6rem;
+    left: 34.5%;
+}
+.project-h42{
+    position: absolute;
+    top: 6.25rem;
+    font-weight: 100;
+    color: #c8c1f2;
+    line-height: 1.6rem;
+    left: 32.5%;
+}
+.project-container{
+     position: absolute;
+    bottom: 2%;
+    height: 640px;
+    width: 1000px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    left: 15%;
+}
+img{
+    height: 130px;
+    width: 270px;
+    border: 0.2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+}
+.project1-container1{
+    height: 300px;
+    width: 300px;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.05);
+}
+.pro1-sec1{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+}
+.pro1-sec2{
+    position: absolute;
+    height: 35%;
+    width: 100%;
+}
+.pro1-sec2-h3{
+    position: absolute;
+    top: 46%;
+    left: 5%;
+    font-weight: 100;
+    color: white;
+    line-height: 1.6rem;
+}
+.tech-badge{
+    top: 46%;
+    left: 5%;
+    font-weight: 100;
+    color: white;
+    line-height: 1.6rem;
+    position: absolute;
+    top: 70%;
+    bottom: 0%;
+}
+.badge{
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #00d4ff;
+}
+.pro1-sec2-h5{
+    left: 5%;
+    position: absolute;
+    top: 100%;
+    font-weight: 100;
+    color: rgb(200, 193, 242);
+    line-height: 1.3rem;
+}
+.pro1-sec3-btn1{
+    height: 30px;
+    width: 125px;
+    border: 0.1px solid;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff4fd8, #7b68ee);
+}
+.pro1-sec3-btn2{
+    height: 30px;
+    width: 125px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(45deg, #00d4ff, #7b68ee);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 30%;
+    right: 5%;
+
+}
+.pro1-sec3{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.project2-container2{
+    height: 300px;
+    width: 300px;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+.pro2-sec1{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+}
+.pro2-sec2{
+    position: absolute;
+    height: 35%;
+    width: 100%;
+}
+.pro2-sec2-h3{
+    position: absolute;
+    top: 46%;
+    left: 5%;
+    font-weight: 100;
+    color: white;
+    line-height: 1.6rem;
+}
+.tech2-badge{
+    top: 46%;
+    left: 5%;
+    font-weight: 100;
+    color: white;
+    line-height: 1.6rem;
+    position: absolute;
+    top: 70%;
+    bottom: 0%;
+}
+.badge2{
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #00d4ff;
+}
+.pro2-sec2-h5{
+    left: 5%;
+    position: absolute;
+    top: 100%;
+    font-weight: 100;
+    color: rgb(200, 193, 242);
+    line-height: 1.3rem;
+}
+.pro2-sec3-btn1{
+    height: 30px;
+    width: 125px;
+    border: 0.1px solid;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff4fd8, #7b68ee);
+}
+.pro2-sec3-btn2{
+    height: 30px;
+    width: 125px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(45deg, #00d4ff, #7b68ee);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 30%;
+    right: 5%;
+
+}
+.pro2-sec3{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+}

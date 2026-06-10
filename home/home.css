@@ -527,5 +527,118 @@ h4{
     color: white;
     border: none;
     bottom: 10%;
-    right: 20%;
+    right: 38%;
+}
+
+.projects-2{
+    height: 200px;
+    width: 430px;
+    border: 0.2px solid black;
+    position: absolute;
+    bottom: 125px;
+    left: 20%;
+    border-radius: 15px;
+}
+.pro2-container{
+    height: 200px;
+    width: 430px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.pro2-sec1{
+    height: 200px;
+    width: 15%;
+    position: absolute;
+    left: 0;
+
+}
+.pro2-sec2{
+    height: 200px;
+    width: 70%;
+    position: absolute;
+}
+.pro2-sec2-h1{
+    color: white;
+    position: absolute;
+    top: 7%;
+    font-weight: 100;
+    font-size: xx-large;
+}
+.pro2-sec2-h4{
+    position: absolute;
+    top: 25%;
+    font-weight: 100;
+    color: #c8c1f2;
+    line-height: 1.6rem;
+}
+.pro2-sec3{
+    height: 200px;
+    width: 15%;
+    position: absolute;
+    right: 0;
+}
+.projects-3{
+    height: 200px;
+    width: 430px;
+    bottom: 125px;
+    right: 21%;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    position: absolute;
+    
+}
+.pro3-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    height: 200px;
+    width: 430px;
+
+}
+.pro3-sec1{
+    height: 200px;
+    width: 15%;
+    position: absolute;
+    left: 0;
+}
+.pro3-sec2{
+    height: 200px;
+    width: 70%;
+    position: absolute;
+}
+.pro3-sec3{
+    height: 200px;
+    width: 15%;
+    position: absolute;
+    right: 0;
+}
+
+.pro3-sec2-h1{
+    color: white;
+    position: absolute;
+    top: 7%;
+    font-weight: 100;
+    font-size: xx-large;
+}
+.pro3-sec2-h4{
+    position: absolute;
+    top: 25%;
+    font-weight: 100;
+    color: #c8c1f2;
+    line-height: 1.6rem;
+}
+.project-button{
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: medium;
+    position: absolute;
+    background: linear-gradient(to right, #00d4ff, #7b68ee);
+    color: white;
+    border: none;
+    bottom: 5%;
+    left: 43%;
+    transition: 0.8s;
 }
