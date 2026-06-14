@@ -1,19 +1,20 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>My PORTFOLIO</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <section class="home">
-        <div class="navbar">  
-            <a class="nav-item" id="button1" onclick="SmoothScroll('1')"> Home</a>
-            <a class="nav-item" id="button2" onclick="SmoothScroll('2')">About</a>
-            <a class="nav-item" id="button3" onclick="SmoothScroll('3')">Projects</a>
-            <a class="nav-item" id="button4" onclick="SmoothScroll('4')">Skills</a>
-            <a class="nav-item" id="button5" onclick="SmoothScroll('5')">Contact ME</a>
+    <div class="navbar">  
+            <a class="nav-item" href="#home-section"> Home</a>
+            <a class="nav-item" href="#about-section">About</a>
+            <a class="nav-item" href="#project-section">Projects</a>
+            <a class="nav-item" href="#skills-section">Skills</a>
+            <a class="nav-item" href="#contact-section">Contact ME</a>
             <div class="mainslider"></div>
         </div>
+    <section class="home" id="home-section">
         <div class="info-sec">
             <h1 style="font-size:3rem;font-weight: 800;">Hi, I'm <br> </h1><br>
             <h1 class="2ndhead" style="font-weight:800;" >NIKHIL VISHWAKARMA<br> </h1><br>
@@ -26,36 +27,9 @@
             <img class="insta" src="Instagram-icon.svg" onclick="location.href='https://instagram.com/nikhilvishwakarma06'">
             <img class="linkedin" src="Linkedin-icon.svg">
         </div>
-
-        <div class="photo-sec">
-        </div>
-        <script>
-            function SmoothScroll(sectionID){
-                if(sectionID=='about-me'){
-                document.getElementById('about-me').scrollIntoView({behavior:'smooth'});
-            }
-        }
-        </script>
-        <script>
-        const items = document.querySelectorAll(".nav-item");
-        const slider = document.querySelector(".mainslider");
-        const firstItem = items[0];
-        firstItem.classList.add("active");
-        slider.style.left = firstItem.offsetLeft + "px";
-        slider.style.width = firstItem.offsetWidth + "px";
-        items.forEach(item=>{
-            item.addEventListener("click",()=>{
-                items.forEach(i=>{
-                    i.classList.remove("active"); 
-            });
-                item.classList.add("active");
-                slider.style.left = item.offsetLeft + "px";
-                slider.style.width = item.offsetWidth + "px";
-                });   
-        });  
-        </script>
+        <div class="photo-sec"></div>
     </section>
-    <section class="about-me" id="about-me">
+    <section class="about-me" id="about-section">
         <div class="photo-sec2"></div>
         <div class="details">
             <h4 class="details-h4">Get To Know Me</h4>
@@ -92,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section class="project">
+    <section class="project" id="project-section">
         <header class="project-head1">
         <h1 class="project-h1">Pro<span class="project-span1">jects</span></h1><br>
         <h4 class="project-h4">Here are some of my projects that i'have worked on<br>Each project taught me something new and helped me grow.</h4>
@@ -105,7 +79,11 @@
             <section class="pro1-sec2">
                 <h1 class="pro1-sec2-h1">Birthday Greeting Application</h1>
                 <h4 class="pro1-sec2-h4">A beautiful Birthday Greeting Web Application that <br> displays  personalized wishes,aniamtions,cards and much <br>more cute creative interactions</h4>
-                <section class="pro1-sec2-sec1"> HTML CSS JAVASCRIPT</section>
+                <section class="pro1-sec2-sec1"> 
+                    <span class="pro1-sec2-badge">HTML</span>
+                    <span class="pro1-sec2-badge">CSS</span>
+                    <span class="pro1-sec2-badge">JavaScript</span>
+                </section>
                 <button class="project1-livebtn">Demo</button>
                 <button class="project1-githubbtn">Github</button>
             </section>
@@ -113,30 +91,28 @@
         <div class="projects-2">
             <div class="pro2-container">
             <section class="pro2-sec1">
-                <i class="fa-solid fa-code"></i>
+                <img src="Skills.svg">
             </section>
             <section class="pro2-sec2">
                 <h1 class="pro2-sec2-h1">Portfolio Website</h1>
                 <h4 class="pro2-sec2-h4">My personal portfolio website build with modern UI/UX and smooth animations.</h4>
             </section>
-            <section class="pro2-sec3">
-                <i class="fa-solid fa-angle-right"></i>
-            </section>
             </div>
         </div>
         <div class="projects-3">
             <div class="pro3-container">
-                <section class="pro3-sec1"></section>
+                <section class="pro3-sec1">
+                    <img src="thunder-bolt.svg">
+                </section>
                 <section class="pro3-sec2">
                     <h1 class="pro3-sec2-h1">Coming Soon</h1>
                     <h4 class="pro3-sec2-h4">More exciting projects are no the way.<br>Satay Tuned!</h4>
                 </section>
-                <section class="pro3-sec3"></section>
             </div>
         </div>
         <button class="project-button" onclick="location.href='all-projects.html'">View All Projects    <i class="fa-solid fa-angle-right"></i></button>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills-section">
         <header class="skills-header">
         <h1 class="header-h1">My <span class="skill-span1">Skills</span></h1>
         <h4 class="header-h4">technologies and tools I use to build amazing </h4>
@@ -260,7 +236,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact-section">
         <header class="contact-header">
             <h1 class="con-head-h1">Let's<span class="con-head-h1-span"> Connect!</span></h1>
             <h4 class="con-head-h4">Have a project idea,want to collaborate</h4>
@@ -311,9 +287,9 @@
                     </div>
                 </section>
                 <section class="con1-sec4">
-                    <img class="contact-social-icons" src="Github-icon.svg">
-                    <img class="contact-social-icons" src="Linkedin-icon.svg">
-                    <img class="contact-social-icons" src="Instagram-icon.svg">
+                    <img class="contact-media-icons2" src="Github-icon.svg" onclick="location.href='https://github.com/nikkkhil06'">
+                    <img class="contact-media-icons2" src="Linkedin-icon.svg" onclick="location.href='">
+                    <img class="contact-media-icons2" src="Instagram-icon.svg" onclick="location.href='https://instagram.com/nikhilvishwakarma06'">
                 </section>
             </div>
             <div class="contact-container">
@@ -329,4 +305,6 @@
             </div>
         </div>
     </section>
+    <script src="home.js"></script>
+</html>
 </body>

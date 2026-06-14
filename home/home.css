@@ -18,10 +18,9 @@ body{
     background: rgba(17, 2, 50, 0.8);
     border: 2px solid black;
     border-radius: 30px;
-    position:sticky;
-    top: 2%;
-    left: 35%;
-    font-size: smaller;
+    position:fixed;
+    left: 33%;
+    font-size: medium;
     font-weight: 600;
     display: flex;
     justify-content: space-evenly;
@@ -30,6 +29,7 @@ body{
     animation: movement 0.4s 1 forwards ease-in-out;
     line-height: 1.6;
     color: rgba(255,255,255,0.8);
+    z-index: 100;
 }
 @keyframes movement{
     from{
@@ -149,6 +149,7 @@ h4{
     position: absolute;
     top: 23vh;
     left: 6.5%;
+    filter: brightness(90px);
     transition:smooth;
     animation: movementphoto 0.4s 1 forwards  ease-in-out;
     background-image: url("ai-profile-pic.jpg");
@@ -170,7 +171,9 @@ h4{
 .about-me{
     height: 100vh;
     width: 100vw;
+    scroll-margin-top: 80px;
     position: relative;
+    scroll-margin-top: 15px;
     background:linear-gradient(to right, #2b0380,#2d097b,#391384,#381b7d,#391c77,#391384,#2d097b,#2b0380);
 }
 .photo-sec2{
@@ -411,6 +414,7 @@ h4{
 .project{
     height: 100vh;
     width: 100vw;
+    scroll-margin-top: 60px;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -423,7 +427,7 @@ h4{
     color: transparent;
 }
 .project-head1{
-    height: 120px;
+    height: auto;
     width: 100vw;
     position: absolute;
     display: flex;
@@ -435,7 +439,7 @@ h4{
 .project-h1{
     position: absolute;
     right: 52%;
-    top: 24%;
+    top: 2.5rem;
     font-size: xxx-large;
     
 }
@@ -496,14 +500,21 @@ h4{
 
 }
 .pro1-sec2-sec1{
+    left: 5%;
+    font-weight: 100;
     color: white;
     position: absolute;
-    top: 37%;
-    left: 33%;
-    font-weight: 100;
-    line-height: 1.6rem;
+    top: 11rem;
     left: 0;
-    top: 56%;
+}
+.pro1-sec2-badge{
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: smaller;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #00d4ff;
 }
 .project1-livebtn{
     height: 45px;
@@ -516,6 +527,11 @@ h4{
     border: none;
     bottom: 10%;
     left: 0;
+    transition: 0.3s;
+}
+.project1-livebtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0,212,255,0.4);
 }
 .project1-githubbtn{
     height: 45px;
@@ -528,14 +544,20 @@ h4{
     border: none;
     bottom: 10%;
     right: 38%;
+    transition: 0.3s;
+}
+.project1-githubbtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0,212,255,0.4);
 }
 
 .projects-2{
-    height: 200px;
+    height: 150px;
     width: 430px;
     border: 0.2px solid black;
+    background: rgba(255, 255, 255, 0.05);
     position: absolute;
-    bottom: 125px;
+    bottom: 11.5rem;
     left: 20%;
     border-radius: 15px;
 }
@@ -548,42 +570,39 @@ h4{
 }
 .pro2-sec1{
     height: 200px;
-    width: 15%;
+    width: 10%;
     position: absolute;
-    left: 0;
+    left: 2.8rem;
+    top: 3rem;
 
 }
 .pro2-sec2{
     height: 200px;
     width: 70%;
+    margin-left: 7rem;
     position: absolute;
 }
 .pro2-sec2-h1{
     color: white;
     position: absolute;
-    top: 7%;
+    top: 1.5rem;
     font-weight: 100;
     font-size: xx-large;
 }
 .pro2-sec2-h4{
     position: absolute;
-    top: 25%;
+    top: 4rem;
     font-weight: 100;
     color: #c8c1f2;
     line-height: 1.6rem;
 }
-.pro2-sec3{
-    height: 200px;
-    width: 15%;
-    position: absolute;
-    right: 0;
-}
 .projects-3{
-    height: 200px;
+    height: 150px;
     width: 430px;
-    bottom: 125px;
+    bottom: 11.5rem;
     right: 21%;
     border: 0.2px solid black;
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     position: absolute;
     
@@ -593,38 +612,33 @@ h4{
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    height: 200px;
+    height: 150px;
     width: 430px;
 
 }
 .pro3-sec1{
     height: 200px;
-    width: 15%;
+    width: 10%;
     position: absolute;
-    left: 0;
+    left: 2.8rem;
+    top: 3rem;
 }
 .pro3-sec2{
     height: 200px;
     width: 70%;
+    margin-left: 7rem;
     position: absolute;
 }
-.pro3-sec3{
-    height: 200px;
-    width: 15%;
-    position: absolute;
-    right: 0;
-}
-
 .pro3-sec2-h1{
     color: white;
     position: absolute;
-    top: 7%;
+    top: 1.5rem;
     font-weight: 100;
     font-size: xx-large;
 }
 .pro3-sec2-h4{
     position: absolute;
-    top: 25%;
+    top: 4rem;
     font-weight: 100;
     color: #c8c1f2;
     line-height: 1.6rem;
@@ -638,15 +652,21 @@ h4{
     background: linear-gradient(to right, #00d4ff, #7b68ee);
     color: white;
     border: none;
-    bottom: 5%;
+    bottom: 7rem;
     left: 43%;
     transition: 0.8s;
+    transition: 0.3s;
+}
+.project-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0,212,255,0.4);
 }
 
 
 .skills{
     height: 100vh;
     width: 100vw;
+    scroll-margin-top: 60px;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -683,7 +703,7 @@ h4{
 }
 .skills-container{
     position: absolute;
-    bottom: 2%;
+    bottom: 2rem;
     height: 640px;
     width: 100vw;
     border-radius: 15px;
@@ -694,7 +714,7 @@ h4{
     gap: 40px;
 }
 .frontend-skills{
-    height: 600px;
+    height: 560px;
     width: 450px;
     border: 0.2px solid black;
     border-radius: 15px;
@@ -755,7 +775,7 @@ h4{
 }
 
 .tools-container{
-    height: 600px;
+    height: 560px;
     width: 450px;
     border: 0.2px solid black;
     border-radius: 15px;
@@ -824,7 +844,7 @@ h4{
     width: 40px;
 }
 .current{
-    height: 600px;
+    height: 560px;
     width: 450px;
     border: 0.2px solid black;
     border-radius: 15px;
@@ -866,7 +886,7 @@ h4{
 .container-s3-sec2{
     position: absolute;
     bottom: 0%;
-    height: 450px;
+    height: 410px;
     width: 450px;
     display: flex;
     flex-direction: row;
@@ -900,7 +920,6 @@ h4{
     margin-left: 10px;
 }
 .learning-title{
-    line-height: 1.6;
 }
 .learning-title-des{
     font-weight: 100;
@@ -911,6 +930,7 @@ h4{
 .contact{
     height: 100vh;
     width: 100vw;
+    scroll-margin-top: 60px;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -927,7 +947,7 @@ h4{
     top: 5%;
 }
 .con-head-h1{
-
+    margin-right: 7.5rem;
 }
 .con-head-h1-span{
     position: absolute;
@@ -945,7 +965,7 @@ h4{
 }
 .detail-container{
     position: absolute;
-    bottom: 2%;
+    bottom: 2rem;
     height: 640px;
     width: 100vw;
     border-radius: 15px;
@@ -1070,11 +1090,17 @@ h4{
     bottom: 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 .contact-social-icons{
     height: 40px;
     width: 40px;
+    transition: 0.1s;
+    border: 0.2px solid black;
+    border-radius:10px;
+}
+.contact-social-icons:hover{
+    transform: scale(1.1);
 }
 .contact-container{
     height: 550px;
@@ -1090,8 +1116,8 @@ h4{
     padding: 20px;
 }
 .form-h1{
-    padding: 20px;
-    margin-left: 7.5rem;
+    margin-left: 8rem;
+    margin-top: 3rem;
 }
 .form-h4{
     margin-left: 6rem;
@@ -1139,4 +1165,15 @@ textarea::placeholder{
 .submit-detail:hover{
     transform: translateY(-3px);
     box-shadow: 0 0 25px rgba(0,212,255,0.4);
+}
+.contact-media-icons2{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+.contact-media-icons2:hover{
+    transform: scale(1.1);
 }
