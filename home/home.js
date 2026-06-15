@@ -15,7 +15,7 @@ const items = document.querySelectorAll(".nav-item");
                 slider.style.width = item.offsetWidth + "px";
                 const section=document.querySelector(item.getAttribute("href"));
                 window.scrollTo({
-                    top: section.offsetTop-80,
+                    top: section.offsetTop-60,
                     behavior:"smooth"
                 });
         });  });

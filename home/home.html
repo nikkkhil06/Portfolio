@@ -293,14 +293,13 @@
                 </section>
             </div>
             <div class="contact-container">
-                <h2 class="form-h1">Send me a Message</h2>
+                <h2 class="form-h1" >Send me a Message</h2>
                 <h4 class="form-h4">let's have a discuession on your project</h4>
-                <form class="contact-form">
-                    <input type="text" placeholder="Enter Your Name">
-                    <input type="email" placeholder="Enter your Email">
-                    <textarea placeholder="Enter your Message"></textarea>
+                <form class="contact-form" action="https://formspree.io/f/mojzrvaz" method="POST">
+                    <input type="text" placeholder="Enter Your Name" name="Name" required>
+                    <input type="email" placeholder="Enter your Email" name="Email" required>
+                    <textarea placeholder="Enter your Message" name="Message" required></textarea>
                     <input class="submit-detail" type="submit" placeholder="submit">
-
                 </form>
             </div>
         </div>
