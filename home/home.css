@@ -152,7 +152,7 @@ h4{
     filter: brightness(90%);
     transition:smooth;
     animation: movementphoto 0.4s 1 forwards  ease-in-out;
-    background-image: url("ai-profile-pic.jpg");
+    background-image: url("images-icons/ai-profile-pic.jpg");
     background-size: contain;
     
 }
@@ -177,7 +177,7 @@ h4{
     background:linear-gradient(to right, #2b0380,#2d097b,#391384,#381b7d,#391c77,#391384,#2d097b,#2b0380);
 }
 .photo-sec2{
-    background-image: url("ai-profile-pic.jpg");
+    background-image: url("images-icons/ai-profile-pic.jpg");
     background-size: cover;
     height: 350px;
     width: 350px;
